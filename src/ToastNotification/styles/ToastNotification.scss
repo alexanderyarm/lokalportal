@@ -1,0 +1,77 @@
+.ToastNotification {
+  padding: 1rem;
+  border-radius: 3px;
+  font-size: 1rem;
+  width: 300px;
+
+  & + & {
+    margin-top: 1rem;
+  }
+
+  &--info {
+    border: 1px solid #a9a9a9;
+    background: #efefef;
+  }
+
+  &--warning {
+    color: #69440a;
+    border: 1px solid #e29e34;
+    background: #ffe680;
+  }
+
+  &--alert {
+    color: #fff;
+    border: 1px solid #9c2020;
+    background: #e45454;
+  }
+
+  &--tl,
+  &--tr {
+    &.animation-enter {
+      opacity: 0;
+      transform: translate3d(0, 25%, 0);
+    }
+  
+    &.animation-enter-done {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+      transition: opacity .3s ease, transform .3s ease;
+    }
+  
+    &.animation-exit {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  
+    &.animation-exit-active {
+      opacity: 0;
+      transform: translate3d(0, -25%, 0);
+      transition: opacity .3s ease, transform .3s ease;
+    }
+  }
+
+  &--bl,
+  &--br {
+    &.animation-enter {
+      opacity: 0;
+      transform: translate3d(0, -25%, 0);
+    }
+  
+    &.animation-enter-done {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+      transition: opacity .3s ease, transform .3s ease;
+    }
+  
+    &.animation-exit {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  
+    &.animation-exit-active {
+      opacity: 0;
+      transform: translate3d(0, 25%, 0);
+      transition: opacity .3s ease, transform .3s ease;
+    }
+  }
+}

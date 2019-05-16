@@ -1,5 +1,19 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## API
+
+`NotificationsWidget.show(message, position, type)`
+
+**message**<br>
+String
+
+**position**<br>
+Can be any value from the list: 'tl', 'tr', 'bl', 'br'
+
+**type**<br>
+Can be any value from the list: 'info', 'warning', 'alert'
+
+
 ## Available Scripts
 
 In the project directory, you can run:
